@@ -16,4 +16,15 @@ const searchVariable = (obj, variable) => {
     const keyes = variable.split('.');
     let result = obj;
 
+    // use a loop to search for value
 
+    for (let key of keyes) {
+        if (result && typeof result === 'object' && key in result) {
+            result = result[key];
+        }
+        else {
+            return undefined;
+        }
+    }
+    return result;
+};
