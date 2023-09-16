@@ -11,3 +11,9 @@ const data = {
             }
         ]
 };
+//create a function with two parameter and split with '.'
+const searchVariable = (obj, variable) => {
+    const keyes = variable.split('.');
+    let result = obj;
+
+
