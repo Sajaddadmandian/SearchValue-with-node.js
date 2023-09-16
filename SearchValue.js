@@ -28,3 +28,6 @@ const searchVariable = (obj, variable) => {
     }
     return result;
 };
+// search and print
+console.log(data);
+console.log(searchVariable(data, 'aaa.1'));
